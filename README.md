@@ -1,15 +1,5 @@
-# Baystation
-[Website/Wiki](https://baystation.xyz) &nbsp; &nbsp; [Discord](https://baystation.xyz/discord) &nbsp; &nbsp; [DMDoc](https://dmdoc.baystation.xyz) &nbsp; &nbsp; [Code (here!)](https://baystation.xyz/github)
-
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3.0-orange.svg)](https://opensource.org/licenses/AGPL-3.0)
-[![Last Commit](https://img.shields.io/github/last-commit/Baystation12/Baystation12)](https://img.shields.io/github/last-commit/Baystation12/Baystation12/dev)
-![Discord](https://img.shields.io/discord/104289531796131840?label=discord&color=5865f2&link=https%3A%2F%2Fbaystation.xyz%2Fdiscord)
-\
-[![CI Status](https://github.com/baystation12/baystation12/workflows/Run%20Tests/badge.svg)](https://github.com/Baystation12/Baystation12/actions/workflows/test.yml)
-[![CodeQL](https://github.com/baystation12/baystation12/workflows/CodeQL/badge.svg)](https://github.com/Baystation12/Baystation12/actions/workflows/codeql-analysis.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/baystation12/baystation12/badge)](https://www.codefactor.io/repository/github/baystation12/baystation12)
-
----
+### NOTICE OF MODIFICATION
+This project was forked from Baystation 12 on 2026/08/28.
 
 ### LICENSE
 
