@@ -14,6 +14,7 @@ GLOBAL_TYPED_NEW(commandos, /datum/antagonist/deathsquad/mercenary)
 	initial_spawn_req = 4
 	initial_spawn_target = 6
 	faction = "commando"
+	faction_verb = /mob/living/proc/convert_to_accomplice
 	no_prior_faction = TRUE
 
 

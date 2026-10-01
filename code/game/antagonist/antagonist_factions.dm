@@ -5,6 +5,13 @@
 		return
 	convert_to_faction(M.mind, GLOB.revs)
 
+/mob/living/proc/convert_to_accomplice(mob/M as mob in able_mobs_in_oview(src))
+	set name = "Recruit Accomplice"
+	set category = "Abilities"
+	if(!M.mind || !M.client)
+		return
+	convert_to_faction(M.mind, GLOB.accomplices)
+
 /mob/living/proc/convert_to_faction(datum/mind/player, datum/antagonist/faction)
 
 	if(!player || !faction || !player.current)

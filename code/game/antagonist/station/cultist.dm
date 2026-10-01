@@ -58,6 +58,7 @@ GLOBAL_TYPED_NEW(cult, /datum/antagonist/cultist)
 	var/no_shuttle_summon = TRUE
 
 	faction = "cult"
+	faction_verb = null
 
 /datum/antagonist/cultist/create_global_objectives()
 

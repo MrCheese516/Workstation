@@ -22,6 +22,7 @@ GLOBAL_TYPED_NEW(ert, /datum/antagonist/ert)
 	skill_setter = /datum/antag_skill_setter/generic/ert
 
 	faction = "emergency"
+	faction_verb = null
 	no_prior_faction = TRUE
 
 	base_to_load = /datum/map_template/ruin/antag_spawn/ert

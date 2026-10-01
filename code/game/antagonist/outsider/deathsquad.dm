@@ -16,6 +16,7 @@ GLOBAL_TYPED_NEW(deathsquad, /datum/antagonist/deathsquad)
 	initial_spawn_target = 6
 
 	faction = "deathsquad"
+	faction_verb = null
 	no_prior_faction = TRUE
 
 	var/deployed = 0

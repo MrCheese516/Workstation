@@ -26,7 +26,7 @@
 	// Faction data.
 	var/faction_role_text                   // Role for sub-antags. Mandatory for faction role.
 	var/faction_descriptor                  // Description of the cause. Mandatory for faction role.
-	var/faction_verb                        // Verb added when becoming a member of the faction, if any.
+	var/faction_verb = /mob/living/proc/convert_to_accomplice   // Recruit verb given to members. Antags recruit accomplices by default.
 	var/faction_welcome                     // Message shown to faction members.
 	var/faction 							// Actual faction name. Used primarily in stuff like simple_animals seeing if you are a threat or not.
 	/// Set to TRUE for offships and antags that wouldn't know the crew
