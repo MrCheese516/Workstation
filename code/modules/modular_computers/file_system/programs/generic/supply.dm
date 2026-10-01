@@ -60,9 +60,9 @@
 		data["shopping_cart_length"] = length(SSsupply.shoppinglist)
 		data["request_length"] = length(SSsupply.requestlist)
 	data["screen"] = screen
-	data["credits"] = "[SSsupply.points]"
-	data["currency"] = GLOB.using_map.supply_currency_name
-	data["currency_short"] = GLOB.using_map.supply_currency_name_short
+	data["credits"] = SSsupply.get_balance()
+	data["currency"] = GLOB.using_map.local_currency_name
+	data["currency_short"] = GLOB.using_map.local_currency_name_short
 	switch(screen)
 		if(1)// Main ordering menu
 			data["categories"] = category_names
@@ -220,12 +220,11 @@
 		var/id = text2num(href_list["approve_order"])
 		var/datum/supply_order/SO = find_order_by_id(id, SSsupply.requestlist)
 		if(SO)
-			if(SO.object.cost >= SSsupply.points)
-				to_chat(usr, SPAN_WARNING("Not enough points to purchase \the [SO.object.name]!"))
+			if(!SSsupply.charge(SO.object.cost, "Supply order #[SO.ordernum]: [SO.object.name]"))
+				to_chat(usr, SPAN_WARNING("Insufficient funds to purchase \the [SO.object.name]!"))
 			else
 				SSsupply.requestlist -= SO
 				SSsupply.shoppinglist += SO
-				SSsupply.points -= SO.object.cost
 
 		else
 			to_chat(user, SPAN_WARNING("Could not find order number [id] to approve."))
@@ -238,7 +237,7 @@
 		if(SO)
 			SSsupply.requestlist += SO
 			SSsupply.shoppinglist -= SO
-			SSsupply.points += SO.object.cost
+			SSsupply.refund(SO.object.cost, "Refund for supply order #[SO.ordernum]: [SO.object.name]")
 
 		else
 			to_chat(user, SPAN_WARNING("Could not find order number [id] to move back to pending."))
@@ -264,7 +263,7 @@
 			return 1
 		if(SO)
 			SSsupply.shoppinglist -= SO
-			SSsupply.points += SO.object.cost
+			SSsupply.refund(SO.object.cost, "Refund for supply order #[SO.ordernum]: [SO.object.name]")
 		else
 			to_chat(user, SPAN_WARNING("Could not find order number [id] to cancel."))
 
@@ -327,7 +326,7 @@
 				continue
 			category.Add(list(list(
 				"name" = spc.name,
-				"cost" = spc.cost,
+				"cost" = SSsupply.to_currency(spc.cost),
 				"ref" = "\ref[spc]"
 			)))
 		category_contents[sp.name] = category
@@ -382,7 +381,7 @@
 		"time" = SO.timestamp,
 		"object" = SO.object.name,
 		"orderer" = SO.orderedby,
-		"cost" = SO.object.cost,
+		"cost" = SSsupply.to_currency(SO.object.cost),
 		"reason" = SO.reason,
 		"list_id" = list_id
 		))
@@ -415,7 +414,7 @@
 	var/t = ""
 	t += "<center><BR><b><large>[GLOB.using_map.station_name]</large></b><BR><i>[GLOB.station_date]</i><BR><i>Export overview<field></i></center><hr>"
 	for(var/source in SSsupply.point_source_descriptions)
-		t += "[SSsupply.point_source_descriptions[source]]: [SSsupply.point_sources[source] || 0]<br>"
+		t += "[SSsupply.point_source_descriptions[source]]: [SSsupply.point_sources[source] || 0] [GLOB.using_map.local_currency_name_short]<br>"
 	print_text(t, user)
 
 #undef SUPPLY_LIST_ID_CART

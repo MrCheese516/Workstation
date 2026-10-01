@@ -6,4 +6,4 @@
 	O.object = pick(SSsupply.master_supply_list)
 	O.orderedby = random_name(pick(MALE,FEMALE), species = SPECIES_HUMAN)
 	SSsupply.shoppinglist += O
-	SSsupply.points = max(0, SSsupply.points - O.object.cost)
+	SSsupply.charge(O.object.cost, "Supply order #[O.ordernum]: [O.object.name]", partial = TRUE)

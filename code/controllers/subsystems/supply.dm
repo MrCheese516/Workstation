@@ -1,15 +1,20 @@
 SUBSYSTEM_DEF(supply)
 	name = "Supply"
-	wait = 20 SECONDS
+	wait = 5 MINUTES // Each fire is one account transaction, so pay the stipend in larger, less frequent chunks.
 	priority = SS_PRIORITY_SUPPLY
 	//Initializes at default time
 	flags = SS_NO_TICK_CHECK
 
-	//supply points
-	var/points = 50
-	var/points_per_process = 1
+	// Supply pack costs and export values are in supply points. Money moves in local currency,
+	// converted with GLOB.using_map.supply_price_multiplier (see to_currency()).
+	var/points_per_process = 15
 	var/points_per_slip = 2
+	/// Income per source in local currency, for the statistics screen.
 	var/point_sources = list()
+	/// Income in local currency not yet deposited, e.g. while the economy is not set up yet.
+	var/pending_income = 0
+	/// Machine ID shown on supply transactions.
+	var/transaction_source = "Supply Management"
 	var/pointstotalsum = 0
 	var/pointstotal = 0
 	//control
@@ -46,23 +51,66 @@ SUBSYSTEM_DEF(supply)
 		if(mat.sale_price > 0)
 			point_source_descriptions[mat.display_name] = "From exported [mat.display_name]"
 
-// Just add points over time.
+// Just add money over time.
 /datum/controller/subsystem/supply/fire()
 	add_points_from_source(points_per_process, "time")
+	deposit_income("Supply stipend")
 
 
 /datum/controller/subsystem/supply/UpdateStat(time)
 	if (PreventUpdateStat(time))
 		return ..()
-	..("Points: [points]")
+	..("Balance: [get_balance()]")
 
 
 //Supply-related helper procs.
 
+/// The account that pays for supply orders and receives export income.
+/datum/controller/subsystem/supply/proc/get_account()
+	RETURN_TYPE(/datum/money_account)
+	return department_accounts["Supply"] || station_account
+
+/datum/controller/subsystem/supply/proc/get_balance()
+	var/datum/money_account/account = get_account()
+	return account ? account.money : 0
+
+/// Converts an amount of supply points to local currency.
+/datum/controller/subsystem/supply/proc/to_currency(amount)
+	return round(amount * GLOB.using_map.supply_price_multiplier)
+
+/// Records income of `amount` supply points from `source`. Call deposit_income() to pay it into the account.
 /datum/controller/subsystem/supply/proc/add_points_from_source(amount, source)
-	points += amount
-	point_sources[source] += amount
-	point_sources["total"] += amount
+	var/money = to_currency(amount)
+	pending_income += money
+	point_sources[source] += money
+	point_sources["total"] += money
+
+/datum/controller/subsystem/supply/proc/deposit_income(purpose)
+	var/datum/money_account/account = get_account()
+	if(!account || pending_income <= 0)
+		return
+	if(account.deposit(pending_income, purpose, transaction_source))
+		pending_income = 0
+
+/// Charges `amount` supply points to the supply account. Returns TRUE on success.
+/// With `partial`, charges whatever the account can afford instead of failing.
+/datum/controller/subsystem/supply/proc/charge(amount, purpose, partial = FALSE)
+	var/datum/money_account/account = get_account()
+	if(!account)
+		return FALSE
+	var/money = to_currency(amount)
+	if(partial)
+		money = min(money, account.money)
+	if(money <= 0)
+		return FALSE
+	return account.withdraw(money, purpose, transaction_source)
+
+/// Refunds `amount` supply points to the supply account.
+/datum/controller/subsystem/supply/proc/refund(amount, purpose)
+	var/datum/money_account/account = get_account()
+	if(!account)
+		return FALSE
+	return account.deposit(to_currency(amount), purpose, transaction_source)
 
 	//To stop things being sent to centcomm which should not be sent to centcomm. Recursively checks for these types.
 /datum/controller/subsystem/supply/proc/forbidden_atoms_check(atom/A)
@@ -186,6 +234,8 @@ SUBSYSTEM_DEF(supply)
 	if(length(material_count))
 		for(var/material_type in material_count)
 			add_points_from_source(material_count[material_type], material_type)
+
+	deposit_income("Export sale")
 
 /datum/controller/subsystem/supply/proc/get_clear_turfs()
 	var/list/clear_turfs = list()
