@@ -31,6 +31,8 @@
 	var/faction 							// Actual faction name. Used primarily in stuff like simple_animals seeing if you are a threat or not.
 	/// Set to TRUE for offships and antags that wouldn't know the crew
 	var/no_prior_faction = FALSE
+	/// Set to TRUE to let this antag's faction members (sub-antags) be drafted into other antag roles by the mid-round lottery. They leave this faction when drafted.
+	var/faction_members_promotable = FALSE
 
 	// Spawn values (autotraitor and game mode)
 	var/hard_cap = 3                        // Autotraitor var. Won't spawn more than this many antags.
@@ -112,7 +114,8 @@
 	return 1
 
 /// Get the raw list of potential players.
-/datum/antagonist/proc/build_candidate_list(datum/game_mode/mode, ghosts_only)
+/// `allow_faction_promotion` lets faction members (sub-antags) of templates with `faction_members_promotable` be candidates.
+/datum/antagonist/proc/build_candidate_list(datum/game_mode/mode, ghosts_only, allow_faction_promotion = FALSE)
 	candidates = list() // Clear.
 
 	// Prune restricted status. Broke it up for readability.
@@ -121,13 +124,14 @@
 		if (ghosts_only && !(isghostmind(player) || isnewplayer(player.current)))
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: Only ghosts may join as this role!")
 			continue
-		if (player.special_role)
+		var/datum/antagonist/promotable_faction = allow_faction_promotion ? get_promotable_faction(player) : null
+		if (player.special_role && !promotable_faction)
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They already have a special role ([player.special_role])!")
 			continue
 		if (player in pending_antagonists)
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They have already been selected for this role!")
 			continue
-		if (player_is_antag(player))
+		if (!promotable_faction && player_is_antag(player))
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They are already an antagonist!")
 			continue
 		var/result = can_become_antag_detailed(player)
@@ -173,17 +177,19 @@
 		message_admins("Could not auto-spawn a [role_text], active antag limit reached.")
 		return 0
 
-	build_candidate_list(SSticker.mode, flags & (ANTAG_OVERRIDE_MOB|ANTAG_OVERRIDE_JOB))
+	build_candidate_list(SSticker.mode, flags & (ANTAG_OVERRIDE_MOB|ANTAG_OVERRIDE_JOB), TRUE)
 	if(!length(candidates))
 		message_admins("Could not auto-spawn a [role_text], no candidates found.")
 		return 0
 
-	attempt_spawn(1) //auto-spawn antags one at a time
+	attempt_spawn(1, TRUE) //auto-spawn antags one at a time
 	if(!length(pending_antagonists))
 		message_admins("Could not auto-spawn a [role_text], none of the available candidates could be selected.")
 		return 0
 
 	var/datum/mind/player = pending_antagonists[1]
+	// Must happen before add_antagonist(), since remove_antagonist() resets special_role and skills.
+	leave_factions_for_promotion(player)
 	if(!add_antagonist(player,0,0,0,1,1))
 		message_admins("Could not auto-spawn a [role_text], failed to add antagonist.")
 		return 0
@@ -192,12 +198,21 @@
 
 	return 1
 
+/// Removes a sub-antag drafted for this role from their old faction, as a mind only holds one antag role.
+/datum/antagonist/proc/leave_factions_for_promotion(datum/mind/player)
+	var/list/all_antag_types = GLOB.all_antag_types_
+	for(var/antag_type in all_antag_types)
+		var/datum/antagonist/old_faction = all_antag_types[antag_type]
+		if(player in old_faction.faction_members)
+			old_faction.remove_antagonist(player)
+			message_admins("[uppertext(id)]: [key_name(player)] was removed as a [old_faction.faction_role_text] to be promoted to [role_text].")
+
 //Selects players that will be spawned in the antagonist role from the potential candidates
 //Selected players are added to the pending_antagonists lists.
 //Attempting to spawn an antag role with ANTAG_OVERRIDE_JOB should be done before jobs are assigned,
 //so that they do not occupy regular job slots. All other antag roles should be spawned after jobs are
 //assigned, so that job restrictions can be respected.
-/datum/antagonist/proc/attempt_spawn(spawn_target = null)
+/datum/antagonist/proc/attempt_spawn(spawn_target = null, allow_faction_promotion = FALSE)
 	if(isnull(spawn_target))
 		spawn_target = initial_spawn_target
 
@@ -211,13 +226,13 @@
 	while(length(candidates) && length(pending_antagonists) < spawn_target)
 		var/datum/mind/player = candidates[1]
 		candidates -= player
-		draft_antagonist(player)
+		draft_antagonist(player, allow_faction_promotion)
 
 	return 1
 
-/datum/antagonist/proc/draft_antagonist(datum/mind/player)
+/datum/antagonist/proc/draft_antagonist(datum/mind/player, allow_faction_promotion = FALSE)
 	//Check if the player can join in this antag role, or if the player has already been given an antag role.
-	if(player.special_role)
+	if(player.special_role && !(allow_faction_promotion && get_promotable_faction(player)))
 		log_debug("[player.key] was selected for [role_text] by lottery, but they already have a special role.")
 		return FALSE
 	if(!(flags & ANTAG_OVERRIDE_JOB) && (!player.current || istype(player.current, /mob/new_player)))

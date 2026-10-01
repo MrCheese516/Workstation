@@ -62,6 +62,26 @@
 			return antag
 	return 0
 
+/// Returns the antag whose faction the player is a member (sub-antag) of, if that faction allows promotion
+/// and it is the player's only antag status. Returns null otherwise.
+/proc/get_promotable_faction(datum/mind/player)
+	RETURN_TYPE(/datum/antagonist)
+	var/datum/antagonist/promotable_faction
+	var/list/all_antag_types = GLOB.all_antag_types_
+	for(var/antag_type in all_antag_types)
+		var/datum/antagonist/antag = all_antag_types[antag_type]
+		if(player in antag.pending_antagonists)
+			return null
+		if(!(player in antag.current_antagonists))
+			continue
+		if(promotable_faction || !antag.faction_members_promotable || !(player in antag.faction_members))
+			return null
+		promotable_faction = antag
+	// special_role can be overwritten by other sources (e.g. borer husks), so make sure it still reflects the faction role.
+	if(promotable_faction && player.special_role == promotable_faction.faction_role_text)
+		return promotable_faction
+	return null
+
 GLOBAL_LIST_EMPTY(all_antag_types_)
 GLOBAL_LIST_EMPTY(all_antag_spawnpoints_)
 GLOBAL_LIST_EMPTY(antag_names_to_ids_)

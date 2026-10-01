@@ -28,6 +28,7 @@ GLOBAL_TYPED_NEW(revs, /datum/antagonist/revolutionary)
 	faction_indicator = "hud_rev"
 	//faction_invisible = 1
 	faction = "revolutionary"
+	faction_members_promotable = TRUE
 
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg)
 	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/chief_engineer, /datum/job/rd, /datum/job/cmo, /datum/job/lawyer, /datum/job/officer, /datum/job/warden, /datum/job/detective)

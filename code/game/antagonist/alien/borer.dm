@@ -15,6 +15,7 @@ GLOBAL_TYPED_NEW(borers, /datum/antagonist/borer)
 	faction_descriptor = "Unity"
 	faction_welcome = "You are now a thrall to a cortical borer. Please listen to what they have to say; they're in your head."
 	faction = "borer"
+	faction_members_promotable = TRUE
 	faction_indicator = "hudalien"
 
 	hard_cap = 5

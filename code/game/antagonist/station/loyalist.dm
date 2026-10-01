@@ -28,6 +28,7 @@ GLOBAL_TYPED_NEW(loyalists, /datum/antagonist/loyalists)
 	skill_setter = /datum/antag_skill_setter/station
 
 	faction = "loyalist"
+	faction_members_promotable = TRUE
 
 /datum/antagonist/loyalists/Initialize()
 	..()
