@@ -15,7 +15,10 @@
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
 		/datum/mil_branch/scga,
-		/datum/mil_branch/auf
+		/datum/mil_branch/auf,
+		/datum/mil_branch/nt,
+		/datum/mil_branch/nt/union,
+		/datum/mil_branch/nt/security,
 	)
 
 	spawn_branch_types = list(
@@ -27,7 +30,10 @@
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
 		/datum/mil_branch/scga,
-		/datum/mil_branch/auf
+		/datum/mil_branch/auf,
+		/datum/mil_branch/nt,
+		/datum/mil_branch/nt/union,
+		/datum/mil_branch/nt/security,
 	)
 
 	species_to_branch_blacklist = list(
@@ -222,20 +228,99 @@
 	)
 
 /datum/mil_branch/solgov
-	name = "SolGov Employee"
-	name_short = "SCG"
-	email_domain = "torch.scg"
+	name = "Solar Confederation Employee"
+	name_short = "GOVT"
+	email_domain = "torch.sc"
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,
 		/datum/mil_rank/sol/agent,
+		/datum/mil_rank/sol/agent/mops,
+		/datum/mil_rank/sol/agent/css,
 		/datum/mil_rank/sol/scientist
 	)
+
 
 	spawn_rank_types = list(
 		/datum/mil_rank/sol/gov,
 		/datum/mil_rank/sol/agent,
+		/datum/mil_rank/sol/agent/mops,
+		/datum/mil_rank/sol/agent/css,
 		/datum/mil_rank/sol/scientist
+	)
+
+/datum/mil_branch/nt
+	name = "NanoTrasen Employee"
+	name_short = "NT"
+	email_domain = "NTmail.net"
+	allow_custom_email = TRUE
+
+	rank_types = list(
+		/datum/mil_rank/nt/med/chief,
+		/datum/mil_rank/nt/med/surgeon,
+		/datum/mil_rank/nt/med/surgeon_mate,
+		/datum/mil_rank/nt/research/chief,
+		/datum/mil_rank/nt/research/researcher,
+		/datum/mil_rank/nt/liaison
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/nt/med/chief,
+		/datum/mil_rank/nt/med/surgeon,
+		/datum/mil_rank/nt/med/surgeon_mate,
+		/datum/mil_rank/nt/research/chief,
+		/datum/mil_rank/nt/research/researcher,
+		/datum/mil_rank/nt/liaison
+	)
+
+/datum/mil_branch/nt/union
+	name = "Unionized Spacefarer"
+	name_short = "UN"
+
+	rank_types = list(
+		/datum/mil_rank/nt/deck/captain,
+		/datum/mil_rank/nt/deck/first_mate,
+		/datum/mil_rank/nt/deck/second_mate,
+		/datum/mil_rank/nt/deck/third_mate,
+		/datum/mil_rank/nt/deck/chief,
+		/datum/mil_rank/nt/deck/able,
+		/datum/mil_rank/nt/deck/spacer,
+		/datum/mil_rank/nt/eng/chief,
+		/datum/mil_rank/nt/eng/second_engineer,
+		/datum/mil_rank/nt/eng/third_engineer,
+		/datum/mil_rank/nt/eng/fourth_engineer,
+		/datum/mil_rank/nt/eng/trainee
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/nt/deck/captain,
+		/datum/mil_rank/nt/deck/first_mate,
+		/datum/mil_rank/nt/deck/second_mate,
+		/datum/mil_rank/nt/deck/third_mate,
+		/datum/mil_rank/nt/deck/chief,
+		/datum/mil_rank/nt/deck/able,
+		/datum/mil_rank/nt/deck/spacer,
+		/datum/mil_rank/nt/eng/chief,
+		/datum/mil_rank/nt/eng/second_engineer,
+		/datum/mil_rank/nt/eng/third_engineer,
+		/datum/mil_rank/nt/eng/fourth_engineer,
+		/datum/mil_rank/nt/eng/trainee
+	)
+
+/datum/mil_branch/nt/security
+	name = "Private Security Contractor"
+	name_short = "PMC"
+
+	rank_types = list(
+		/datum/mil_rank/nt/sec/chief,
+		/datum/mil_rank/nt/sec/sergeant,
+		/datum/mil_rank/nt/sec/constable
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/nt/sec/chief,
+		/datum/mil_rank/nt/sec/sergeant,
+		/datum/mil_rank/nt/sec/constable
 	)
 
 //This variable returns decimal values for alt-ranks, but isn't player facing.
@@ -487,7 +572,7 @@
 	name = "Civilian"
 
 /datum/mil_rank/civ/contractor
-	name = "Contractor"
+	name = "Freelancer"
 
 /datum/mil_rank/civ/synthetic
 	name = "Synthetic"
@@ -498,14 +583,23 @@
  */
 
 /datum/mil_rank/sol/gov
-	name = "SolGov Representative"
-	name_short = "SGR"
+	name = "Justice"
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 
 /datum/mil_rank/sol/agent
-	name = "SFP Agent"
+	name = "NAP Agent"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/agent)
+
+/datum/mil_rank/sol/agent/mops
+	name = "MoPS Agent"
+	name_short = "AGT"
+	accessory = list(/obj/item/clothing/accessory/badge/agent/mops)
+
+/datum/mil_rank/sol/agent/css
+	name = "CSS Agent"
+	name_short = "AGT"
+	accessory = list(/obj/item/clothing/accessory/badge/agent/css)
 
 /datum/mil_rank/sol/scientist
 	name = "Government Scientist"
@@ -520,3 +614,93 @@
 
 /datum/mil_rank/alien
 	name = "Alien"
+
+/datum/mil_rank/nt/liaison
+	name = "Representative"
+
+/datum/mil_rank/nt/contractor
+	name = "General Contractor"
+
+/datum/mil_rank/nt/deck/captain
+	name = "Captain"
+	name_short = "CAPT"
+
+/datum/mil_rank/nt/deck/first_mate
+	name = "First Officer"
+	name_short = "1OF"
+
+/datum/mil_rank/nt/deck/second_mate
+	name = "Second Officer"
+	name_short = "2OF"
+
+/datum/mil_rank/nt/deck/third_mate
+	name = "Third Officer"
+	name_short = "3OF"
+
+/datum/mil_rank/nt/deck/chief
+	name = "Chief Rate"
+	name_short = "CRT"
+
+/datum/mil_rank/nt/deck/able
+	name = "Able Spacefarer"
+	name_short = "ABLE"
+
+/datum/mil_rank/nt/deck/spacer
+	name = "Ordinary Spacefarer"
+	name_short = "SPCR"
+
+/datum/mil_rank/nt/eng/chief
+	name = "Chief Engineer"
+	name_short = "CENG"
+
+/datum/mil_rank/nt/eng/second_engineer
+	name = "Second Engineer"
+	name_short = "2ENG"
+
+/datum/mil_rank/nt/eng/third_engineer
+	name = "Third Engineer"
+	name_short = "3ENG"
+
+/datum/mil_rank/nt/eng/fourth_engineer
+	name = "Fourth Engineer"
+	name_short = "4ENG"
+
+/datum/mil_rank/nt/eng/trainee
+	name = "Trainee Engineer"
+	name_short = "TENG"
+
+/datum/mil_rank/nt/sec/chief
+	name = "Chief of Security"
+	name_short = "CSEC"
+
+/datum/mil_rank/nt/sec/sergeant
+	name = "Sergeant"
+	name_short = "SGT"
+
+/datum/mil_rank/nt/sec/constable
+	name = "Constable"
+	name_short = "CON"
+
+/datum/mil_rank/nt/agent
+	name = "NanoTrasen Agent"
+	name_short = "AGT"
+
+/datum/mil_rank/nt/med/chief
+	name = "Chief Surgeon"
+	name_short = "CMED"
+
+/datum/mil_rank/nt/med/surgeon
+	name = "Surgeon"
+	name_short = "SR"
+
+/datum/mil_rank/nt/med/surgeon_mate
+	name = "Surgeon's Mate"
+	name_short = "SRM"
+
+/datum/mil_rank/nt/research/chief
+	name = "Chief Researcher"
+	name_short = "CRES"
+
+/datum/mil_rank/nt/research/researcher
+	name = "Researcher"
+	name_short = "SCI"

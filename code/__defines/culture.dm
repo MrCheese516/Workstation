@@ -25,7 +25,9 @@
 #define FACTION_DAIS           "Deimos Advanced Information Systems"
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
-#define FACTION_SPACECOPS  "Sol Federal Police"
+#define FACTION_SPACECOPS      "National Associated Police"
+#define FACTION_SECRETPOLICE   "Ministry of Public Safety"
+#define FACTION_SURVEILLANCE   "Cryptography and Signals Service"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"

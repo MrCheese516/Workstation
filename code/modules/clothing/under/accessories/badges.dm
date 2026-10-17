@@ -193,21 +193,24 @@
 
 
 /obj/item/clothing/accessory/badge/agent
-	name = "\improper SFP Agent's badge"
-	desc = "A leather-backed gold badge displaying the crest of the Sol Federal Police."
+	name = "\improper NAP Agent's badge"
+	desc ="A leather-backed gold badge displaying the crest of the National Associated Police"
 	icon_state = "agentbadge"
 	slot_flags = SLOT_BELT | SLOT_TIE | SLOT_MASK
 	slot = ACCESSORY_SLOT_INSIGNIA
 	badge_string = FACTION_SPACECOPS
 
 
-/obj/item/clothing/accessory/badge/tracker
-	name = "\improper Tracker's badge"
-	desc = "A blue leather-backed gold badge displaying the crest of the Sol Federal Police."
-	icon_state = "trackerbadge"
-	slot_flags = SLOT_BELT | SLOT_TIE
-	slot = ACCESSORY_SLOT_INSIGNIA
-	badge_string = FACTION_SPACECOPS
+/obj/item/clothing/accessory/badge/agent/mops
+	name = "\improper MoPS Agent's badge"
+	desc ="A leather-backed gold badge displaying the crest of the Ministry of Public Safety"
+	badge_string = FACTION_SECRETPOLICE
+
+
+/obj/item/clothing/accessory/badge/agent/css
+	name = "\improper CSS Agent's badge"
+	desc ="A leather-backed gold badge displaying the crest of the Cryptography and Signals Service"
+	badge_string = FACTION_SURVEILLANCE
 
 
 /obj/item/clothing/accessory/badge/press
