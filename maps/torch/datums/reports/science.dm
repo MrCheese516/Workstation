@@ -16,9 +16,8 @@
 	add_field(/datum/report_field/simple_text, "Index")
 	add_field(/datum/report_field/simple_text, "AO Codename")
 	add_field(/datum/report_field/people/from_manifest, "Reporting Scientist")
-	add_field(/datum/report_field/people/from_manifest, "Overviewing Chief Science Officer")
+	add_field(/datum/report_field/people/from_manifest, "Overviewing Research Director")
 	add_field(/datum/report_field/pencode_text, "Containment Procedures")
 	add_field(/datum/report_field/pencode_text, "Generalized Overview")
 	add_field(/datum/report_field/simple_text, "Approximate Age of AO")
 	add_field(/datum/report_field/simple_text, "Threat Level of AO")
-

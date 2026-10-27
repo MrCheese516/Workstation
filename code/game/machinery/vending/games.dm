@@ -1,6 +1,6 @@
 /obj/machinery/vending/games
 	name = "\improper Good Clean Fun"
-	desc = "Vends things that the CO and SEA are probably not going to appreciate you fiddling with instead of your job..."
+	desc = "Vends things that the captain and bosun are probably not going to appreciate you fiddling with instead of your job..."
 	icon_state = "games"
 	icon_deny = "games-deny"
 	icon_vend = "games-vend"

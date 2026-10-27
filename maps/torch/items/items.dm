@@ -45,7 +45,7 @@ Random item spawning
 Torch specific items
 *******************/
 
-/obj/item/modular_computer/pda/explorer
+/obj/item/modular_computer/pda/acquisition_tech
 	icon_state = "pda-exp"
 	icon_state_unpowered = "pda-exp"
 
@@ -55,7 +55,7 @@ Torch specific items
 /obj/item/modular_computer/pda/captain
 	stored_pen = /obj/item/pen/multi/cmd/co
 
-/obj/item/storage/backpack/explorer
+/obj/item/storage/backpack/acquisition_tech
 	name = "explorer backpack"
 	desc = "A rugged backpack."
 	icon_state = "exppack"
@@ -64,7 +64,7 @@ Torch specific items
 		slot_r_hand_str = "exppack",
 		)
 
-/obj/item/storage/backpack/satchel/explorer
+/obj/item/storage/backpack/satchel/acquisition_tech
 	name = "explorer satchel"
 	desc = "A rugged satchel for field work."
 	icon_state = "satchel-exp"
@@ -73,7 +73,7 @@ Torch specific items
 		slot_r_hand_str = "satchel-exp",
 		)
 
-/obj/item/storage/backpack/messenger/explorer
+/obj/item/storage/backpack/messenger/acquisition_tech
 	name = "explorer messenger bag"
 	desc = "A rugged backpack worn over one shoulder."
 	icon_state = "courierbagsci"
@@ -89,7 +89,7 @@ Unique items
 	desc = "A slightly bulky pen with a silvery case. Twisting the top allows you to switch the nib for different colors."
 
 /obj/item/pen/multi/cmd/co
-	name = "commanding officer's pen"
+	name = "captain's pen"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "pen_co"
 	desc = "A slightly bulky pen with a golden case. Twisting the top allows you to switch the nib for different colors."

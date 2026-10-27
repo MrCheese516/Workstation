@@ -601,7 +601,7 @@
 	name = "lift (fourth deck)"
 	lift_floor_label = "Deck 4"
 	lift_floor_name = "Supply Deck"
-	lift_announce_str = "Arriving at Supply Deck: Telecommunications. EVA. Docking Ports. Pathfinder's Office. Cargo Storage. Supply Office. Laundry. Sanitation."
+	lift_announce_str = "Arriving at Supply Deck: Telecommunications. EVA. Docking Ports. Acquisitions Boss's Office. Cargo Storage. Supply Office. Laundry. Sanitation."
 
 /area/turbolift/torch_ground
 	name = "lift (fifth deck)"
@@ -626,11 +626,11 @@
 	req_access = list(access_o_mess, access_solgov_crew)
 	lighting_tone = AREA_LIGHTING_WARM
 
-/area/command/pathfinder
-	name = "\improper Pathfinder's Office"
-	icon_state = "pathfinder_office"
+/area/command/acquisition_boss
+	name = "\improper Acquisitions Boss's Office"
+	icon_state = "acquis_boss_office"
 	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_pathfinder)
+	req_access = list(access_acquis_boss)
 	holomap_color = HOLOMAP_AREACOLOR_EXPLORATION
 
 /area/command/pilot
@@ -722,7 +722,7 @@
 
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
+	name = "\improper Command - Magistrate's Office"
 	req_access = list(access_representative)
 	lighting_tone = AREA_LIGHTING_WARM
 
@@ -878,7 +878,7 @@
 	name = "\improper Supply Upper Warehouse"
 
 /area/quartermaster/deckchief
-	name = "\improper Deck Chief's Office"
+	name = "\improper Quartermaster's Office"
 	icon_state = "quart"
 	req_access = list(access_qm)
 
@@ -895,17 +895,17 @@
 /area/quartermaster/expedition/storage
 	name = "\improper Hangar Expedition Storage"
 	icon_state = "mining"
-	req_access = list(list(access_mining, access_explorer, access_xenoarch))
+	req_access = list(list(access_mining, access_acquis, access_xenoarch))
 
 /area/quartermaster/expedition/atmos
 	name = "\improper Hangar Atmospheric Storage"
 	icon_state = "mining"
-	req_access = list(list(access_mining, access_explorer, access_xenoarch))
+	req_access = list(list(access_mining, access_acquis, access_xenoarch))
 
 /area/quartermaster/exploration
 	name = "\improper Exploration Equipment"
 	icon_state = "exploration"
-	req_access = list(list(access_explorer, access_pathfinder, access_pilot))
+	req_access = list(list(access_acquis, access_acquis_boss, access_pilot))
 	holomap_color = HOLOMAP_AREACOLOR_EXPLORATION
 
 /area/quartermaster/shuttlefuel

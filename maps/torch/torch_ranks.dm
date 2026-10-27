@@ -11,6 +11,9 @@
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/nap,
+		/datum/mil_branch/mops,
+		/datum/mil_branch/css,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
@@ -26,6 +29,9 @@
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/nap,
+		/datum/mil_branch/mops,
+		/datum/mil_branch/css,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet,
 		/datum/mil_branch/iccgn,
@@ -61,7 +67,7 @@
 	species_to_rank_blacklist = list(
 		/singleton/species/machine = list(
 			/datum/mil_branch/solgov = list(
-				/datum/mil_rank/sol/agent
+				/datum/mil_rank/nap/agent
 			)
 		)
 	)
@@ -234,19 +240,56 @@
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/agent,
-		/datum/mil_rank/sol/agent/mops,
-		/datum/mil_rank/sol/agent/css,
-		/datum/mil_rank/sol/scientist
 	)
 
 
 	spawn_rank_types = list(
 		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/agent,
-		/datum/mil_rank/sol/agent/mops,
-		/datum/mil_rank/sol/agent/css,
-		/datum/mil_rank/sol/scientist
+	)
+
+/datum/mil_branch/nap
+
+	name = "National Associated Police"
+	name_short = "NAP"
+	email_domain = "torch.nap"
+
+	rank_types = list(
+		/datum/mil_rank/nap/agent
+	)
+
+
+	spawn_rank_types = list(
+		/datum/mil_rank/nap/agent
+	)
+
+/datum/mil_branch/mops
+
+	name = "Ministry of Public Safety"
+	name_short = "MoPS"
+	email_domain = "torch.mops"
+
+	rank_types = list(
+		/datum/mil_rank/mops/agent
+	)
+
+
+	spawn_rank_types = list(
+		/datum/mil_rank/mops/agent
+	)
+
+/datum/mil_branch/css
+
+	name = "Cryptography and Signals Service"
+	name_short = "CSS"
+	email_domain = "torch.css"
+
+	rank_types = list(
+		/datum/mil_rank/css/agent
+	)
+
+
+	spawn_rank_types = list(
+		/datum/mil_rank/css/agent
 	)
 
 /datum/mil_branch/nt
@@ -586,18 +629,18 @@
 	name = "Justice"
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 
-/datum/mil_rank/sol/agent
-	name = "NAP Agent"
+/datum/mil_rank/nap/agent
+	name = "Deputy Marshal"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/agent)
 
-/datum/mil_rank/sol/agent/mops
-	name = "MoPS Agent"
+/datum/mil_rank/mops/agent
+	name = "Special Agent"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/agent/mops)
 
-/datum/mil_rank/sol/agent/css
-	name = "CSS Agent"
+/datum/mil_rank/css/agent
+	name = "Field Agent"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/agent/css)
 
@@ -616,7 +659,7 @@
 	name = "Alien"
 
 /datum/mil_rank/nt/liaison
-	name = "Representative"
+	name = "Liaison"
 
 /datum/mil_rank/nt/contractor
 	name = "General Contractor"

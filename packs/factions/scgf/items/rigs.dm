@@ -181,7 +181,7 @@
 		/obj/item/rig_module/grenade_launcher
 		)
 
-// Non-standard issue FERT suits for admemery and extraordinary missions (like silently killing the Deck Chief who keeps sending butt faxes to the SCGR)
+// Non-standard issue FERT suits for admemery and extraordinary missions (like silently killing the Quartermaster who keeps sending butt faxes to the Magistrate)
 /obj/item/rig/ert/fleet/combat/stealth
 	name = "experimental SCGF combat hardsuit control module"
 	desc = "A hardsuit utilized by Fleet combat teams."

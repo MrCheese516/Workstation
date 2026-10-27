@@ -49,7 +49,7 @@
 	)
 
 /obj/structure/closet/secure_closet/deckofficer
-	name = "deck chief's locker"
+	name = "quartermaster's locker"
 	req_access = list(access_qm)
 	closet_appearance = /singleton/closet_appearance/secure_closet/torch/cargo/deck_officer
 

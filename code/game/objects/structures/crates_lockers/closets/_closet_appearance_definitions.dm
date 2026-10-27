@@ -439,20 +439,21 @@
 	color = COLOR_PURPLE
 
 /singleton/closet_appearance/secure_closet/expedition
-	color = COLOR_BLUE_GRAY
+	color = COLOR_WARM_YELLOW
 	decals = list(
 		"lower_side_vent"
 	)
 	extra_decals = list(
-		"stripe_vertical_mid_full" = COLOR_PURPLE,
-		"security" = COLOR_PURPLE
+		"stripe_vertical_mid_partial" = COLOR_BEASTY_BROWN,
+		"stripe_vertical_left_partial" = COLOR_BEASTY_BROWN,
+		"mining" = COLOR_BEASTY_BROWN
 	)
 
-/singleton/closet_appearance/secure_closet/expedition/pathfinder
+/singleton/closet_appearance/secure_closet/expedition/acquisition_boss
 	extra_decals = list(
-		"stripe_vertical_left_full" = COLOR_PURPLE,
+		"stripe_vertical_left_full" = COLOR_BEASTY_BROWN,
 		"stripe_vertical_mid_full" = COLOR_CLOSET_GOLD,
-		"stripe_vertical_right_full" = COLOR_PURPLE,
+		"stripe_vertical_right_full" = COLOR_BEASTY_BROWN,
 		"security" = COLOR_CLOSET_GOLD
 	)
 

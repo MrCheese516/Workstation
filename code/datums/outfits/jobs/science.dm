@@ -10,7 +10,7 @@
 	BACKPACK_OVERRIDE_RESEARCH_CORP
 
 /singleton/hierarchy/outfit/job/science/rd
-	name = OUTFIT_JOB_NAME("Chief Science Officer")
+	name = OUTFIT_JOB_NAME("Research Director")
 	l_ear = /obj/item/device/radio/headset/heads/rd
 	uniform = /obj/item/clothing/under/rank/research_director
 	shoes = /obj/item/clothing/shoes/brown

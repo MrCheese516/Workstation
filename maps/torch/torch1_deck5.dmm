@@ -3240,9 +3240,8 @@
 	pixel_y = 24
 	},
 /obj/floor_decal/corner/mauve/mono,
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/torch/acquisitions/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/item/material/hatchet/machete,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "hy" = (
@@ -3326,8 +3325,7 @@
 "hO" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/explorer,
-/obj/item/material/hatchet/machete,
+/obj/structure/closet/secure_closet/torch/acquisitions/acquisition_tech,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -3768,7 +3766,7 @@
 /area/quartermaster/hangar)
 "iT" = (
 /obj/machinery/door/airlock/glass/science{
-	name = "Exploration Equipment"
+	name = "Acquisitions Equipment"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -4090,7 +4088,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "jE" = (
-/obj/machinery/suit_storage_unit/explorer,
+/obj/machinery/suit_storage_unit/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -4425,9 +4423,8 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/torch/acquisitions/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/item/material/hatchet/machete,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "ki" = (
@@ -4438,9 +4435,8 @@
 /area/quartermaster/exploration)
 "kj" = (
 /obj/floor_decal/corner/mauve/mono,
-/obj/structure/closet/secure_closet/explorer,
+/obj/structure/closet/secure_closet/torch/acquisitions/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/item/material/hatchet/machete,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kk" = (
@@ -4492,7 +4488,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "ko" = (
-/obj/machinery/suit_storage_unit/explorer,
+/obj/machinery/suit_storage_unit/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
@@ -4533,7 +4529,7 @@
 "kt" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/science{
-	name = "Exploration Equipment"
+	name = "Acquisitions Equipment"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/exploration)
@@ -4638,7 +4634,7 @@
 /area/quartermaster/exploration)
 "kB" = (
 /obj/machinery/door/airlock/glass/science{
-	name = "Exploration Equipment"
+	name = "Acquisitions Equipment"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4707,7 +4703,7 @@
 /area/quartermaster/exploration)
 "kJ" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Exploration Equipment Maintenance"
+	name = "Acquisitions Equipment Maintenance"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4743,7 +4739,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "kM" = (
-/obj/machinery/suit_storage_unit/explorer,
+/obj/machinery/suit_storage_unit/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	dir = 4;
@@ -4752,7 +4748,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kP" = (
-/obj/machinery/suit_storage_unit/explorer,
+/obj/machinery/suit_storage_unit/acquisition_tech,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/monotile,
@@ -12314,13 +12310,13 @@
 "Gc" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Petrov - Chief Science Officer"
+	department = "Petrov - Research Director"
 	},
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Science Officer's Desk";
+	department = "Research Director's Desk";
 	departmentType = 5;
-	name = "Chief Science Officer RC";
+	name = "Research Director RC";
 	pixel_x = -30
 	},
 /turf/simulated/floor/lino,
@@ -15964,7 +15960,7 @@
 /area/quartermaster/storage)
 "UM" = (
 /obj/machinery/door/airlock/research{
-	name = "Chief Science Officer";
+	name = "Research Director";
 	secured_wires = 1
 	},
 /obj/structure/cable/cyan{

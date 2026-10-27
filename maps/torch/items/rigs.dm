@@ -113,9 +113,9 @@
  * COMMANDING OFFICER
  */
 /obj/item/rig/command/co
-	name = "commanding officer's command HCM"
+	name = "captain's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to commanding officers of the Expeditionary Corps."
+	desc = "A specialized hardsuit rig control module issued to captains of the Expeditionary Corps."
 	icon_state = "command_CO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -205,7 +205,7 @@
 	)
 
 /*
-* CHIEF OF SECURITY
+* SECURITY DIRECTOR
 */
 /obj/item/rig/command/security
 	name = "security command HCM"
@@ -254,7 +254,7 @@
 	)
 
 /*
-* CHIEF SCIENCE OFFICER
+* RESEARCH DIRECTOR
 */
 /obj/item/rig/command/science
 	name = "research command HCM"
@@ -342,7 +342,7 @@
 
 	offline_vision_restriction = TINT_BLIND
 
-	req_access = list(access_pathfinder)
+	req_access = list(access_acquis_boss)
 
 /obj/item/clothing/gloves/rig/command/exploration
 	siemens_coefficient = 0

@@ -82,7 +82,7 @@
 	..()
 	scanner = new /obj/item/stock_parts/computer/scanner/atmos(src)
 
-/obj/item/modular_computer/pda/explorer/install_default_hardware()
+/obj/item/modular_computer/pda/acquisition_tech/install_default_hardware()
 	..()
 	scanner = new /obj/item/stock_parts/computer/scanner/atmos(src)
 

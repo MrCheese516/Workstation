@@ -9,7 +9,7 @@
 	name = "mining suit cycler"
 	model_text = "Mining"
 	req_access = list(access_mining)
-	available_modifications = list(/singleton/item_modifier/space_suit/mining)
+	available_modifications = list(/singleton/item_modifier/space_suit/acquisition_tech)
 	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
 
 /obj/machinery/suit_cycler/salvage

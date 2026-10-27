@@ -4,7 +4,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_com
 
 /singleton/hierarchy/outfit/job/torch/crew/command/CO
-	name = OUTFIT_JOB_NAME("Commanding Officer")
+	name = OUTFIT_JOB_NAME("Captain")
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
@@ -98,7 +98,7 @@
 	backpack_contents = list(/obj/item/clothing/accessory/badge/nanotrasen = 1)
 
 /singleton/hierarchy/outfit/job/torch/crew/representative
-	name = OUTFIT_JOB_NAME("SolGov Representative")
+	name = OUTFIT_JOB_NAME("Magistrate")
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
@@ -107,7 +107,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 /singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Fleet")
+	name = OUTFIT_JOB_NAME("Bosun - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset/sea

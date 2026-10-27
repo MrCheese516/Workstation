@@ -6,6 +6,6 @@
 		/obj/item/clothing/head/commonwealth/pilotka,
 		/obj/item/clothing/accessory/commonwealth_badge/army,
 		/obj/item/clothing/accessory/commonwealth_badge/navy,
-		/obj/item/clothing/accessory/commonwealth_badge/explorer,
+		/obj/item/clothing/accessory/commonwealth_badge/acquisition_tech,
 		/obj/item/clothing/accessory/commonwealth_badge/earhart
 	)

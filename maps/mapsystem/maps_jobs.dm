@@ -35,5 +35,3 @@
 	blacklist = job_to_species_blacklist[J.type]
 	if(blacklist)
 		return (S.type in blacklist)
-
-	return FALSE

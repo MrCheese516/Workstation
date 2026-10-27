@@ -24,7 +24,6 @@
 		/singleton/item_modifier/space_suit/atmos,
 		/singleton/item_modifier/space_suit/engineering,
 		/singleton/item_modifier/space_suit/medical,
-		/singleton/item_modifier/space_suit/mining,
 		/singleton/item_modifier/space_suit/pilot,
 		/singleton/item_modifier/space_suit/science,
 		/singleton/item_modifier/space_suit/security
@@ -35,7 +34,6 @@
 		/singleton/item_modifier/space_suit/atmos,
 		/singleton/item_modifier/space_suit/engineering,
 		/singleton/item_modifier/space_suit/medical,
-		/singleton/item_modifier/space_suit/mining,
 		/singleton/item_modifier/space_suit/pilot,
 		/singleton/item_modifier/space_suit/science,
 		/singleton/item_modifier/space_suit/security,

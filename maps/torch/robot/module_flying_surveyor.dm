@@ -2,7 +2,7 @@
 	name = "survey drone module"
 	display_name = "Surveyor"
 	channels = list(
-		"Exploration" = TRUE,
+		"Acquisitions" = TRUE,
 		"Science" = TRUE
 	)
 	networks = list(NETWORK_RESEARCH)
@@ -54,7 +54,7 @@
 		access_emergency_storage,
 		access_eva,
 		access_expedition_shuttle,
-		access_explorer,
+		access_acquis,
 		access_guppy,
 		access_hangar,
 		access_petrov,

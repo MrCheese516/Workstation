@@ -126,8 +126,8 @@
 
 /datum/gear/tactical/sheath
 	allowed_roles = list(
-		/datum/job/pathfinder,
-		/datum/job/explorer)
+		/datum/job/acquisition_boss,
+		/datum/job/acquisition_tech)
 
 /datum/gear/tactical/press_tag
 	display_name = "Press tag"

@@ -100,7 +100,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 2;
-	name = "Deck Chief"
+	name = "Quartermaster"
 	},
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -1561,7 +1561,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "fl" = (
 /turf/simulated/wall/prepainted,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "fp" = (
 /obj/item/device/radio/intercom{
 	dir = 8;
@@ -1807,15 +1807,15 @@
 "gc" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/pathfinder,
+/obj/structure/closet/secure_closet/torch/acquisitions/acquisition_boss,
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "gd" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/computer/modular/preset/navigation,
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "gf" = (
 /obj/floor_decal/industrial/outline/grey,
 /obj/machinery/suit_cycler/engineering/alt,
@@ -2055,7 +2055,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "he" = (
 /obj/floor_decal/corner/mauve{
 	dir = 5
@@ -2069,7 +2069,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "hf" = (
 /obj/floor_decal/corner/mauve{
 	dir = 5
@@ -2081,7 +2081,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "hg" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -2366,12 +2366,12 @@
 	pixel_x = -22
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "hX" = (
 /obj/structure/table/standard,
 /obj/item/material/folder/blue,
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "hY" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -2625,12 +2625,12 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "jg" = (
 /obj/floor_decal/industrial/outline/yellow,
 /obj/machinery/hologram/holopad/longrange,
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "jh" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -2809,7 +2809,7 @@
 "kg" = (
 /obj/floor_decal/corner/mauve/mono,
 /obj/machinery/button/windowtint{
-	id = "pathfinder_office";
+	id = "acquis_boss_office";
 	pixel_x = -24;
 	pixel_y = 6
 	},
@@ -2819,10 +2819,10 @@
 	},
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Pathfinder"
+	department = "Torch - Acquisitions Boss"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "kh" = (
 /obj/floor_decal/corner/mauve{
 	dir = 10
@@ -2841,7 +2841,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "ki" = (
 /obj/floor_decal/corner/mauve{
 	dir = 10
@@ -2854,7 +2854,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "kj" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -3150,7 +3150,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "lf" = (
 /obj/machinery/door/airlock/science{
-	name = "Pathfinder's Office"
+	name = "Acquisitions Boss's Office"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -3162,7 +3162,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "lh" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3640,7 +3640,7 @@
 	pixel_y = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "mz" = (
 /obj/machinery/light,
 /obj/machinery/newscaster/security_unit{
@@ -3837,10 +3837,10 @@
 /area/hallway/primary/fourthdeck/fore)
 "nn" = (
 /obj/wallframe_spawn/reinforced/polarized/no_grille{
-	id = "pathfinder_office"
+	id = "acquis_boss_office"
 	},
 /turf/simulated/floor/plating,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "no" = (
 /obj/machinery/power/apc{
 	name = "south bump";
@@ -4230,7 +4230,7 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "oT" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
@@ -4532,7 +4532,7 @@
 	pixel_y = -4
 	},
 /turf/simulated/wall/prepainted,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "qc" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -5135,8 +5135,8 @@
 /obj/catwalk_plated,
 /obj/structure/disposalpipe/sortjunction{
 	dir = 1;
-	name = "Pathfinder's Office";
-	sort_type = "Pathfinder's Office"
+	name = "Acquisitions Boss's Office";
+	sort_type = "Acquisitions Boss's Office"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
@@ -7451,7 +7451,7 @@
 /obj/item/material/folder/envelope,
 /obj/item/material/folder/envelope,
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "zF" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -10474,7 +10474,7 @@
 /area/maintenance/fourthdeck/starboard)
 "KZ" = (
 /obj/machinery/door/airlock/mining{
-	name = "Deck Chief"
+	name = "Quartermaster"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -10516,7 +10516,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "Li" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/medical_cloning,
@@ -12388,7 +12388,7 @@
 /obj/random_multi/single_item/memo_research,
 /obj/random_multi/single_item/memo_exploration,
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "QI" = (
 /obj/machinery/door/airlock/mining{
 	name = "Warehouse"
@@ -12926,7 +12926,7 @@
 	dir = 4
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Deck Chief's Office"
+	department = "Torch - Quartermaster's Office"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
@@ -13475,7 +13475,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "Tt" = (
 /obj/structure/closet/emcloset,
 /obj/floor_decal/industrial/outline/grey,
@@ -13657,11 +13657,11 @@
 /area/quartermaster/expedition/storage)
 "TT" = (
 /obj/wallframe_spawn/reinforced/polarized/no_grille{
-	id = "pathfinder_office"
+	id = "acquis_boss_office"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "TW" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -14346,7 +14346,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "VW" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/waterstore)
@@ -14410,7 +14410,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "Wl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14676,7 +14676,7 @@
 /area/command/captainmess)
 "WW" = (
 /obj/machinery/door/airlock/mining{
-	name = "Deck Chief"
+	name = "Quartermaster"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -15683,7 +15683,7 @@
 	pixel_y = 23
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
+/area/command/acquisition_boss)
 "ZA" = (
 /obj/machinery/door/airlock/external/escapepod{
 	icon_state = "closed";
@@ -15818,8 +15818,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/sortjunction{
 	dir = 2;
-	name = "Deck Chief";
-	sort_type = "Deck Chief"
+	name = "Quartermaster";
+	sort_type = "Quartermaster"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)

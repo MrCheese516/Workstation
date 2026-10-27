@@ -40,9 +40,9 @@
 	)
 
 
-/obj/item/clothing/under/commonwealth/utility/explorer
+/obj/item/clothing/under/commonwealth/utility/acquisition_tech
 	accessories = list(
-		/obj/item/clothing/accessory/commonwealth_badge/explorer
+		/obj/item/clothing/accessory/commonwealth_badge/acquisition_tech
 	)
 
 

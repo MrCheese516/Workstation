@@ -55,18 +55,18 @@
 		)
 
 
-/singleton/item_modifier/space_suit/mining
-	name = "Mining"
+/singleton/item_modifier/space_suit/acquisitions
+	name = "Acquisitions"
 
-/singleton/item_modifier/space_suit/mining/Initialize()
+/singleton/item_modifier/space_suit/acquisitions/Initialize()
 	. = ..()
 	var/helmet_setup = type_setups[/obj/item/clothing/head/helmet/space]
-	helmet_setup[SETUP_NAME] = "mining voidsuit helmet"
+	helmet_setup[SETUP_NAME] = "acquistiions voidsuit helmet"
 	helmet_setup[SETUP_ICON_STATE] = "rig0-mining"
 	helmet_setup[SETUP_ITEM_STATE] = "mining_helm"
 
 	var/suit_setup = type_setups[/obj/item/clothing/suit/space/void]
-	suit_setup[SETUP_NAME] = "mining voidsuit"
+	suit_setup[SETUP_NAME] = "acquisitions voidsuit"
 	suit_setup[SETUP_ICON_STATE] = "rig-mining"
 	suit_setup[SETUP_ITEM_STATE_SLOTS] = list(
 			slot_l_hand_str = "mining_voidsuit",
@@ -286,10 +286,10 @@
 	)
 
 
-/singleton/item_modifier/space_suit/sol/explorer
+/singleton/item_modifier/space_suit/acquisition_tech
 	name = "Explorer"
 
-/singleton/item_modifier/space_suit/sol/explorer/Initialize()
+/singleton/item_modifier/space_suit/acquisition_tech/Initialize()
 	. = ..()
 	var/helmet_setup = type_setups[/obj/item/clothing/head/helmet/space]
 	helmet_setup[SETUP_NAME] = "exploration voidsuit helmet"

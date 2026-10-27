@@ -24,9 +24,8 @@
 		/datum/job/chef,
 		/datum/job/assistant,
 		/datum/job/merchant,
-		/datum/job/pathfinder,
-		/datum/job/nt_pilot,
-		/datum/job/explorer
+		/datum/job/acquisition_boss,
+		/datum/job/acquisition_tech
 	)
 
 /datum/gear/gloves/dress

@@ -175,7 +175,7 @@ var/global/const/access_robotics = "ACCESS_ROBOTICS" //29
 var/global/const/access_rd = "ACCESS_RESEARCH_DIRECTOR" //30
 /datum/access/rd
 	id = access_rd
-	desc = "Chief Science Officer"
+	desc = "Research Director"
 	region = ACCESS_REGION_RESEARCH
 
 var/global/const/access_cargo = "ACCESS_CARGO" //31

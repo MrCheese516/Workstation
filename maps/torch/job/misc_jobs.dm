@@ -40,7 +40,8 @@ Civilian
 		"Entertainer",
 		"Independent Observer",
 		"Sociologist",
-		"Trainer")
+		"Trainer",
+		"Lawyer")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(

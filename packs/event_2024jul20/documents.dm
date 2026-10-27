@@ -152,7 +152,7 @@
 
 
 /obj/item/material/folder/envelope/preset/exploorder
-	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CSO/PATHFINDER EYES.'"
+	desc = "A thick envelope. The Expeditionary Corps crest is stamped in the corner, along with 'DISSEMINATE AS NECESSARY. FOR CSO/acquisition_boss EYES.'"
 
 
 /obj/item/material/folder/envelope/preset/exploorder/Initialize()
@@ -204,7 +204,7 @@
 <p>Fleet cargo vessels will be operating in the area, and will be designated with the <strong>"FCV"</strong> temporary designations as a form of verification.</p>
 <p>Your vessel's cargo pod will be re-programmed to link-up with any present <strong>"FCV"</strong> designated cargo vessels in the vicinity for regular resupply operations.</p>
 <p>It is also <strong>strong encouraged</strong> to make use of direct communiques with EXCOM to relay requests for special cargo, as deemed necessary.</p>
-<p>Cargo requests (in or out) from the <strong>Chief Engineer</strong>, <strong>Chief of Security</strong>, <strong>Chief Steward</strong> and <strong>Chief Science Officer</strong> are to be expected in high traffic.</p>
+<p>Cargo requests (in or out) from the <strong>Chief Engineer</strong>, <strong>Chief of Security</strong>, <strong>Chief Steward</strong> and <strong>Research Director</strong> are to be expected in high traffic.</p>
 <p>Transfer for personnel (civilian or otherwise) is to be strongly verified by EXCOM or MARSCOM before granting entry. Docked civilian merchant vessels are to be checked and scrutinised heavily. A record must be made of such, and forwarded to EXCOM.</p>
 <p>Prospecting and exploration operations are to be maintained. However, any away-team operations must be stringently timed, and return of such must be kept in mind. <strong>Retrieval of lost personnel will be impossible due to current circumstances.</strong></p>
 <p>As such, while Standard Operating Procedures remain unchanged, and must still be followed - it is on the shoulders of the deck crew, or bridge crew to co-ordinate with away teams on their return times, whether verbally or via lodged flight plans.</p>
@@ -276,7 +276,7 @@
 
 
 /obj/item/material/folder/envelope/preset/cmdorder
-	desc = "A thick envelope. The Sol Central Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR SCGR/CO EYES ONLY.'"
+	desc = "A thick envelope. The Sol Central Government crest is stamped in the corner, along with 'DO NOT DISSEMINATE. FOR Magistrate/CO EYES ONLY.'"
 	seal_stamp = "\improper Bureau of Emergency Operations rubber stamp"
 
 

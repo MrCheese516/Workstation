@@ -148,17 +148,13 @@
 	job_access_type = /datum/job/bridgeofficer
 	detail_color = COLOR_COMMAND_BLUE
 
-/obj/item/card/id/torch/crew/pathfinder
-	job_access_type = /datum/job/pathfinder
+/obj/item/card/id/torch/crew/acquisition_boss
+	job_access_type = /datum/job/acquisition_boss
 	detail_color = COLOR_PURPLE
 	extra_details = list("onegoldstripe")
 
-/obj/item/card/id/torch/crew/explorer
-	job_access_type = /datum/job/explorer
-	detail_color = COLOR_PURPLE
-
-/obj/item/card/id/torch/crew/pilot
-	job_access_type = /datum/job/nt_pilot
+/obj/item/card/id/torch/crew/acquisition_tech
+	job_access_type = /datum/job/acquisition_tech
 	detail_color = COLOR_PURPLE
 
 // EC Science
@@ -171,10 +167,6 @@
 	desc = "A card issued to science personnel aboard the SEV Torch."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_RESEARCH
-
-/obj/item/card/id/torch/crew/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-	extra_details = list("onegoldstripe")
 
 /obj/item/card/id/torch/crew/research/scientist
 	job_access_type = /datum/job/scientist
@@ -191,12 +183,6 @@
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_BOTTLE_GREEN
 
-/obj/item/card/id/torch/passenger/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-	extra_details = list("onegoldstripe")
-
-/obj/item/card/id/torch/passenger/research/nt_pilot
-	job_access_type = /datum/job/nt_pilot
 
 /obj/item/card/id/torch/passenger/research/scientist
 	job_access_type = /datum/job/scientist

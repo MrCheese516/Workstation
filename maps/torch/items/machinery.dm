@@ -35,20 +35,20 @@
 	autolinkers = list("service")
 
 /obj/machinery/telecomms/server/presets/exploration
-	id = "Exploration Server"
+	id = "Acquisitions Server"
 	freq_listening = list(EXP_FREQ)
-	channel_tags = list(list(EXP_FREQ, "Exploration", COMMS_COLOR_EXPLORER))
+	channel_tags = list(list(EXP_FREQ, "Acquisitions", COMMS_COLOR_EXPLORER))
 	autolinkers = list("exploration")
 
 // Suit cyclers and storage
-/obj/machinery/suit_storage_unit/explorer
+/obj/machinery/suit_storage_unit/acquisition_tech
 	name = "exploration voidsuit storage unit"
-	suit = /obj/item/clothing/suit/space/void/exploration
-	helmet = /obj/item/clothing/head/helmet/space/void/exploration
+	suit = /obj/item/clothing/suit/space/void/mining
+	helmet = /obj/item/clothing/head/helmet/space/void/mining
 	boots = /obj/item/clothing/shoes/magboots
 	tank = /obj/item/tank/oxygen
 	mask = /obj/item/clothing/mask/breath
-	req_access = list(access_explorer)
+	req_access = list(access_acquis)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/pilot
@@ -78,10 +78,9 @@
 		/singleton/item_modifier/space_suit/sol/atmos,
 		/singleton/item_modifier/space_suit/sol/command,
 		/singleton/item_modifier/space_suit/sol/engineering,
-		/singleton/item_modifier/space_suit/sol/explorer,
+		/singleton/item_modifier/space_suit/acquisition_tech,
 		/singleton/item_modifier/space_suit/sol/hazard,
 		/singleton/item_modifier/space_suit/sol/medical,
-		/singleton/item_modifier/space_suit/mining,
 		/singleton/item_modifier/space_suit/sol/pilot,
 		/singleton/item_modifier/space_suit/science,
 		/singleton/item_modifier/space_suit/security/alt
@@ -89,10 +88,10 @@
 	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
 
 /obj/machinery/suit_cycler/exploration
-	name = "exploration suit cycler"
-	model_text = "Exploration"
-	req_access = list(access_explorer)
-	available_modifications = list(/singleton/item_modifier/space_suit/sol/explorer)
+	name = "acquisitions suit cycler"
+	model_text = "Acquisitions"
+	req_access = list(access_acquis)
+	available_modifications = list(/singleton/item_modifier/space_suit/acquisition_tech)
 	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
 
 /obj/machinery/suit_cycler/command

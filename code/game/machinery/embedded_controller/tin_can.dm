@@ -32,7 +32,7 @@
 		ui.open()
 		ui.set_auto_update(1)
 
-// We piggyback off this for the utility procs and data aquisition, mostly
+// We piggyback off this for the utility procs and data acquisition, mostly
 /datum/computer/file/embedded_program/airlock/tin_can
 	var/door_safety = TRUE // Whether you can open the airlock if the atmos on either side don't match
 	state = STATE_FILL
@@ -55,7 +55,7 @@
 			state = STATE_EVACUATE
 			toggleDoor(memory["exterior_status"], tag_exterior_door, door_safety, "close")
 			signalPump(tag_pump_out_internal, 1, 0, 0) // Interior pump, target is a vaccum
-			signalPump(tag_pump_out_external, 1, 1, 10000) // Exterior pump, target is infinite 
+			signalPump(tag_pump_out_external, 1, 1, 10000) // Exterior pump, target is infinite
 			signalPump(tag_pump_out_scrubber, 1) // Get the pump to assist us in scrubbing the air out
 		if("fill_atmos")
 			if(state == STATE_FILL)

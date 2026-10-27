@@ -1,5 +1,5 @@
 /datum/job/senior_doctor
-	title = "Physician"
+	title = "Surgeon"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -10,19 +10,12 @@
 	supervisors = "the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 10
-	alt_titles = list(
-		"Surgeon")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/senior/fleet,
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/senior
+		/datum/mil_branch/nt
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/nt/med/surgeon
 	)
 	skill_points = 26
 	min_skill = list( // 41 points
@@ -47,7 +40,7 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/junior_doctor
-	title = "Medical Resident"
+	title = "Trainee Surgeon"
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 2
@@ -60,14 +53,10 @@
 	economic_power = 6
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/senior/fleet,
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor/senior
+		/datum/mil_branch/nt
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/nt/med/surgeon_mate
 	)
 	skill_points = 22
 	min_skill = list( // 41 points
@@ -101,22 +90,13 @@
 	ideal_character_age = 40
 	minimal_player_age = 0
 	alt_titles = list(
-		"Paramedic",
-		"Corpsman")
+		"Paramedic")
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/contractor
+		/datum/mil_branch/nt
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/nt/med/surgeon_mate
 	)
 	skill_points = 28
 	min_skill = list( // 9 points
@@ -148,17 +128,13 @@
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
-	alt_titles = list(
-		"Corpsman Trainee")
 
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
+		/datum/mil_branch/nt
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2
+		/datum/mil_rank/nt/med/surgeon_mate
 	)
 
 	skill_points = 10
@@ -203,16 +179,11 @@
 	)
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/medical/chemist
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/chemist/fleet,
-		/datum/mil_branch/civilian = /singleton/hierarchy/outfit/job/torch/crew/medical/chemist/contractor
+		/datum/mil_branch/nt
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/civ/contractor
-		)
-
+		/datum/mil_rank/nt/med/surgeon_mate
+	)
 	skill_points = 21
 	min_skill = list( // 12 points
 		SKILL_MEDICAL = SKILL_BASIC, // 4 points
@@ -247,13 +218,10 @@
 	)
 
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/medical/counselor/fleet)
+		/datum/mil_branch/nt)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/ec/o1)
+		/datum/mil_rank/nt/contractor,
+		/datum/mil_rank/nt/med/surgeon_mate)
 	min_skill = list( // 6 points
 		SKILL_BUREAUCRACY = SKILL_TRAINED, // 2 points
 		SKILL_MEDICAL = SKILL_BASIC // 4 points

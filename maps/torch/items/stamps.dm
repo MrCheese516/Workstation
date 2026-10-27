@@ -1,5 +1,5 @@
 /obj/item/stamp/co
-	name = "commanding officer's rubber stamp"
+	name = "captain's rubber stamp"
 	icon_state = "stamp-cap"
 
 /obj/item/stamp/xo
@@ -7,7 +7,7 @@
 	icon_state = "stamp-xo"
 
 /obj/item/stamp/sea
-	name = "senior enlisted advisor's rubber stamp"
+	name = "bosun's rubber stamp"
 	icon_state = "stamp-xo"
 
 /obj/item/stamp/cos
@@ -27,7 +27,7 @@
 	icon_state = "stamp-corp"
 
 /obj/item/stamp/deckoff
-	name = "deck chief's rubber stamp"
+	name = "quartermaster's rubber stamp"
 	icon_state = "stamp-deckchief"
 
 /obj/item/stamp/supply
@@ -35,5 +35,5 @@
 	icon_state = "stamp-cargo"
 
 /obj/item/stamp/path
-	name = "pathfinder's rubber stamp"
+	name = "acquisitions boss's rubber stamp"
 	icon_state = "stamp-pf"

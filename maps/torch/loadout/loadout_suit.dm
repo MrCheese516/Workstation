@@ -51,7 +51,7 @@
 /datum/gear/suit/science_poncho
 	allowed_roles = list(
 		/datum/job/scientist,
-		/datum/job/senior_scientist,
+		,
 		/datum/job/scientist_assistant
 	)
 	allowed_branches = CIVILIAN_BRANCHES
@@ -60,7 +60,7 @@
 	allowed_roles = list(
 		/datum/job/scientist,
 		/datum/job/scientist_assistant,
-		/datum/job/senior_scientist,
+		,
 		/datum/job/merchant
 	)
 	allowed_branches = CIVILIAN_BRANCHES
@@ -143,7 +143,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(options)
 
 /datum/gear/suit/labcoat_ec_cso
-	display_name = "labcoat, chief science officer, Expeditionary Corps"
+	display_name = "labcoat, research director, Expeditionary Corps"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
 	allowed_roles = list(
 		/datum/job/rd
@@ -157,7 +157,7 @@
 		/datum/job/roboticist,
 		/datum/job/scientist_assistant,
 		/datum/job/scientist,
-		/datum/job/senior_scientist,
+		,
 		/datum/job/rd
 	)
 	allowed_branches = CIVILIAN_BRANCHES

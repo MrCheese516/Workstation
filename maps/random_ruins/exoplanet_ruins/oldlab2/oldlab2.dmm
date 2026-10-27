@@ -7811,7 +7811,7 @@
 	d2 = 8
 	},
 /obj/machinery/door/airlock/civilian{
-	name = "Chief Science Officer"
+	name = "Research Director"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/map_template/oldlab2/cso)

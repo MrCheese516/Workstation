@@ -1617,7 +1617,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
 	id_tag = "csodoor";
-	name = "Chief Science Officer";
+	name = "Research Director";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -2133,7 +2133,7 @@
 /area/hallway/primary/bridge/fore)
 "dP" = (
 /obj/structure/table/woodentable/walnut,
-/obj/random_multi/single_item/memo_scgr,
+/obj/random_multi/single_item/memo_magistrate,
 /obj/random_multi/single_item/memo_command,
 /obj/random_multi/single_item/memo_corporate,
 /obj/random_multi/single_item/punitelli,
@@ -3498,7 +3498,7 @@
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
 	id_tag = "repdoor";
-	name = "SCGR's Office Door Control";
+	name = "Magistrate's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
 	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
@@ -7181,7 +7181,7 @@
 "rK" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoor";
-	name = "Commanding Officer";
+	name = "Captain";
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
@@ -7438,7 +7438,7 @@
 "sz" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "seaforedoor";
-	name = "Senior Enlisted Advisor";
+	name = "Bosun";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -7987,7 +7987,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/sol{
-	name = "SolGov Representative";
+	name = "Magistrate";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
@@ -8022,7 +8022,7 @@
 	pixel_x = 36
 	},
 /obj/item/material/folder/envelope/preset/rep,
-/obj/item/documents/scgr,
+/obj/item/documents/magistrate,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
 "uo" = (
@@ -8985,7 +8985,7 @@
 "wD" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - SolGov Representative"
+	department = "Torch - Magistrate"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -9813,8 +9813,8 @@
 	},
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 4;
-	name = "Chief Science Officer";
-	sort_type = "Chief Science Officer"
+	name = "Research Director";
+	sort_type = "Research Director"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
@@ -11852,7 +11852,7 @@
 	pixel_x = 4;
 	pixel_y = -2
 	},
-/obj/random_multi/single_item/memo_scgr,
+/obj/random_multi/single_item/memo_magistrate,
 /obj/structure/sign/double/solgovflag/left{
 	dir = 1;
 	pixel_y = -32
@@ -12151,14 +12151,14 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Senior Enlisted Advisor"
+	department = "Torch - Bosun"
 	},
 /obj/floor_decal/corner/blue/mono,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Senior Enlisted Advisor's Desk";
+	department = "Bosun's Desk";
 	departmentType = 6;
-	name = "Senior Enlisted Advisor RC";
+	name = "Bosun RC";
 	pixel_y = -34
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -13063,7 +13063,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Commanding Officer"
+	department = "Torch - Captain"
 	},
 /obj/machinery/button/windowtint{
 	id = "co_windows";
@@ -13810,7 +13810,7 @@
 "Qp" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "captaindoorfore";
-	name = "Commanding Officer";
+	name = "Captain";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -14972,9 +14972,9 @@
 /obj/item/material/folder/white,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Chief Science Officer's Desk";
+	department = "Research Director's Desk";
 	departmentType = 5;
-	name = "Chief Science Officer RC";
+	name = "Research Director RC";
 	pixel_y = 30
 	},
 /obj/item/material/folder/nt,
@@ -15205,7 +15205,7 @@
 "Wi" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Torch - Chief Science Officer"
+	department = "Torch - Research Director"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -15636,7 +15636,7 @@
 "YC" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "repdoor";
-	name = "SolGov Representative";
+	name = "Magistrate";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,

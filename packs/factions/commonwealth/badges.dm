@@ -36,7 +36,7 @@
 	overlay_state = "army_worn"
 
 
-/obj/item/clothing/accessory/commonwealth_badge/explorer
+/obj/item/clothing/accessory/commonwealth_badge/acquisition_tech
 	name = "ancient Expeditionary Corps patch"
 	desc = {"\
 		A shield shaped blue and green patch with a purple chevron, signifying service \

@@ -44,7 +44,7 @@
 	description_antag = "Krri'gli seem to be guiding the Torch, subtly, to a specific unmapped sector of the galaxy. It's almost like they're too afraid to investigate it personally."
 	icon_state = "docs_blue"
 
-/obj/item/documents/scgr
+/obj/item/documents/magistrate
 	name = "private memos and faxes"
-	desc = "\"Top Secret\" memos and faxes between the SCGR and other officials of the SCG. It's like a chat client ran on pure paperwork."
-	description_antag = "The SCGR's conversations contain a massive amount of dirt on politicians: drugs, sex, money..."
+	desc = "\"Top Secret\" memos and faxes between the Magistrate and other officials of the SCG. It's like a chat client ran on pure paperwork."
+	description_antag = "The Magistrate's conversations contain a massive amount of dirt on politicians: drugs, sex, money..."

@@ -2,13 +2,6 @@
 	hierarchy_type = /singleton/hierarchy/outfit/job/torch/passenger/research
 	l_ear = /obj/item/device/radio/headset/science
 
-/singleton/hierarchy/outfit/job/torch/passenger/research/nt_pilot //pending better uniform
-	name = OUTFIT_JOB_NAME("Corporate Pilot")
-	uniform = /obj/item/clothing/under/rank/ntpilot
-	shoes = /obj/item/clothing/shoes/workboots
-	l_ear = /obj/item/device/radio/headset/headset_pilot
-	id_types = list(/obj/item/card/id/torch/passenger/research/nt_pilot)
-
 /singleton/hierarchy/outfit/job/torch/passenger/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Torch")
 	uniform = /obj/item/clothing/under/rank/scientist

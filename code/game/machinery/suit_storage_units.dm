@@ -59,7 +59,7 @@
 	mask = /obj/item/clothing/mask/breath
 
 /obj/machinery/suit_storage_unit/mining
-	name = "mining voidsuit storage unit"
+	name = "acquisitions voidsuit storage unit"
 	suit= /obj/item/clothing/suit/space/void/mining
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
 	boots = /obj/item/clothing/shoes/magboots

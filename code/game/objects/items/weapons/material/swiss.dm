@@ -153,7 +153,7 @@
 
 	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_WBLADE, SWISSKNF_WCUTTER)
 
-/obj/item/material/knife/folding/swiss/explorer
+/obj/item/material/knife/folding/swiss/acquisition_tech
 	name = "explorer's combi-knife"
 	desc = "A small, purple, multi-purpose folding knife. This one adds a wood saw and pry bar."
 	color = COLOR_PURPLE

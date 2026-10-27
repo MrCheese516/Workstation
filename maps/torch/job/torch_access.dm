@@ -54,12 +54,12 @@ var/global/const/access_liaison = "ACCESS_TORCH_CORPORATE_LIAISON" //84
 	id = access_liaison
 	desc = "Corporate Liaison"
 	region = ACCESS_REGION_COMMAND
-	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO and RD cannot enter
+	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, captain and RD cannot enter
 
 var/global/const/access_representative = "ACCESS_TORCH_REPRESENTATIVE" //85
 /datum/access/representative
 	id = access_representative
-	desc = "SolGov Representative"
+	desc = "Magistrate"
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter
 
@@ -102,19 +102,19 @@ var/global/const/access_senmed = "ACCESS_TORCH_SENIOR_MED" //91
 var/global/const/access_senadv = "ACCESS_TORCH_SENIOR_ADVISOR" //92
 /datum/access/senadv
 	id = access_senadv
-	desc = "Senior Enlisted Advisor"
+	desc = "Bosun"
 	region = ACCESS_REGION_COMMAND
 
-var/global/const/access_explorer = "ACCESS_TORCH_EXPLORER" //93
-/datum/access/explorer
-	id = access_explorer
-	desc = "Explorer"
+var/global/const/access_acquis = "ACCESS_TORCH_EXPLORER" //93
+/datum/access/acquis_tech
+	id = access_acquis
+	desc = "Acquisitions Tech"
 	region = ACCESS_REGION_GENERAL
 
-var/global/const/access_pathfinder = "ACCESS_TORCH_PATHFINDER" //94
-/datum/access/pathfinder
-	id = access_pathfinder
-	desc = "Pathfinder"
+var/global/const/access_acquis_boss = "ACCESS_TORCH_PATHFINDER" //94
+/datum/access/acquisition_boss
+	id = access_acquis_boss
+	desc = "Acquisitions Boss"
 	region = ACCESS_REGION_GENERAL
 
 var/global/const/access_commissary = "ACCESS_TORCH_SHOP" //96
@@ -148,7 +148,7 @@ var/global/const/access_o_mess = "ACCESS_TORCH_O_MESS"
 	desc = "Executive Officer"
 
 /datum/access/qm
-	desc = "Deck Chief"
+	desc = "Quartermaster"
 
 var/global/const/access_torch_fax = "ACCESS_TORCH_FAX"
 /datum/access/torch_fax
@@ -234,7 +234,7 @@ var/global/const/access_petrov_chemistry = "ACCESS_TORCH_PETROV_CHEMISTRY" //205
 var/global/const/access_petrov_rd = "ACCESS_TORCH_PETROV_RD" //206
 /datum/access/petrov_rd
 	id = access_petrov_rd
-	desc = "Petrov Chief Science Officer's Office"
+	desc = "Petrov Research Director's Office"
 	region = ACCESS_REGION_COMMAND
 
 var/global/const/access_petrov_control = "ACCESS_TORCH_PETROV_CONTROL" //207
@@ -302,5 +302,5 @@ var/global/const/access_radio_serv = "ACCESS_RADIO_SERV"
 var/global/const/access_radio_exp = "ACCESS_RADIO_EXP"
 /datum/access/access_radio_exp
 	id = access_radio_exp
-	desc = "Exploration Radio"
+	desc = "Acquisitions Radio"
 	region = ACCESS_REGION_GENERAL

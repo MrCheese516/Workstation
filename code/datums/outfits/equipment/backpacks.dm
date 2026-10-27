@@ -6,11 +6,6 @@
 *******************/
 
 /* Setup new backpacks here */
-/singleton/backpack_outfit/nothing
-	name = "Nothing"
-
-/singleton/backpack_outfit/nothing/spawn_backpack(location, metadata, desired_type)
-	return
 
 /singleton/backpack_outfit/backpack
 	name = "Backpack"
