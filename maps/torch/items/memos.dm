@@ -494,7 +494,7 @@
 
 /obj/item/paper/memo/exploration/pioneers
 	name = "pioneers and you"
-	info = {"An "internal use only" memo detailing proper ettiquette for explorers interacting with Confederate Pioneer Corps personnel. It stresses very heavily that yes, most Confederates do speak ZAC; no, you should not share your funny Pan-Slavic impression; and no, you should ABSOLUTELY not ask if they know any war criminals."}
+	info = {"An "internal use only" memo detailing proper ettiquette for explorers interacting with offship spacefarers. It stresses very heavily that yes, most rimworlders do speak ZAC; no, you should not share your funny Spacer impression; and no, you should ABSOLUTELY not ask if they know any war criminals."}
 
 /obj/item/paper/memo/exploration/mice
 	name = "invasive species and shuttles"
@@ -508,7 +508,7 @@
 
 /obj/item/paper/memo/research/annoyingtheft
 	name = "abuse of access to tools memo"
-	info = {"An "internal use only" memo sent from the Research Director to the acquisitions boss reminding them that the access to the Petrov is not to be abused, further asking that the acquisitions boss crack down on any explorers looting equipment from the Petrov for their "missions". It ends with a note that they have their own equipment that they should be using instead."}
+	info = {"An "internal use only" memo sent from the Research Director to the acquisitions boss reminding them that the access to the Petrov is not to be abused, further asking that the acquisitions boss crack down on any acquisitions techs looting equipment from the Petrov for their "missions". It ends with a note that they have their own equipment that they should be using instead."}
 
 /obj/item/paper/memo/research/toxinsfire
 	name = "toxin development memo"
@@ -536,7 +536,7 @@
 
 /obj/item/paper/memo/corporate/stipendcut
 	name = "corporate spending records"
-	info = {"A "confidential" memo on the current usage of funds provided to SEV Torch corporate liaisons; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
+	info = {"A "confidential" memo on the current usage of funds provided to NEV Torch corporate liaisons; apparently there's threats of a strike over a cut to the cost-of-living stipends by the head office."}
 
 /obj/item/paper/memo/corporate/uniondues
 	name = "union dues reminder"
@@ -548,7 +548,7 @@
 
 /obj/item/paper/memo/corporate/exointerest
 	name = "\improper EXO and you"
-	info = {"Some "confidential" corporate documents directed to the corporate liasion, informing them that their job is to represent EXO and its immediate interests, which are to ensure the SEV Torch is able to maintain the currently defined direction that is within the interests of EXO as a whole."}
+	info = {"Some "confidential" corporate documents directed to the corporate liasion, informing them that their job is to represent NanoTrasen and its immediate interests, which are to ensure the NEV Torch is able to maintain the currently defined direction that is within the interests of NanoTrasen as a whole."}
 
 /obj/item/paper/memo/corporate/thequarterly
 	name = "quarterly budget report"
@@ -560,25 +560,25 @@
 
 /obj/item/paper/memo/corporate/spellchecker
 	name = "spellchecking and you"
-	info = {"Some "internal use only" corporate memos reminding corporate liaisons to proofread reports. It details various reasons behind why correct spelling and punctuation help in making EXO and Expeditionary Command take your report seriously."}
+	info = {"Some "internal use only" corporate memos reminding corporate liaisons to proofread reports. It details various reasons behind why correct spelling and punctuation help in making NanoTrasen and the Board take your report seriously."}
 
 /obj/item/paper/memo/corporate/safetyfirst
 	name = "contractor safety and you"
-	info = {"An "internal use only" corporate document reminding corporate liaisons to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of EXO as a whole is not tarnished due to a workplace accident."}
+	info = {"An "internal use only" corporate document reminding corporate liaisons to report any unsafe behavior from contractors that they either see directly or is reported to them. It goes on to explain that ensuring the health and safety compliance of those under contract not only helps to keep up an image of security but ensures that the reputation of NanoTrasen as a whole is not tarnished due to a workplace accident."}
 
 /obj/item/paper/memo/corporate/legion
 	name = "internal communications"
-	info = {"A stack of "confidential" communications inside the EXO pertaining to the recent encounter with the 'Legion'. The almost unregulated panic among some of the discussions is quite clear, with the overall worry more focused on possible financial losses then danger to the SCG or SCG personnel."}
+	info = {"A stack of "confidential" communications inside NanoTrasen pertaining to the recent encounter with the 'Legion'. The almost unregulated panic among some of the discussions is quite clear, with the overall worry more focused on possible financial losses then danger to ship personnel."}
 
 /obj/item/paper/memo/corporate/miranda
 	name = "miranda line memo"
-	info = {"A "secret" memo from the EXO Head Office. It is somewhat lacking in specifics, but is quite clear that should the Torch locate any traces of human presence past the Miranda Line, that any involvement whatsoever of the EXO or its subsidiaries in the presence is to be denied."}
+	info = {"A "secret" memo from the NanoTrasen Headquarters. It is somewhat lacking in specifics, but is quite clear that should the Torch locate any traces of human presence past the Miranda Line, that any involvement whatsoever of NanoTrasen or its subsidiaries in the presence is to be denied."}
 
 // security memos
 
 /obj/item/paper/memo/security/carrieroverkill
 	name = "security medical report"
-	info = {"An "internal use only" report shared with security by medical on various masters at arms, noting a very large amount of chafing in the chest region due to continuous patrols while wearing plate carriers without reason."}
+	info = {"An "internal use only" report shared with security by medical on various security, noting a very large amount of chafing in the chest region due to continuous patrols while wearing plate carriers without reason."}
 
 /obj/item/paper/memo/security/pepperoveruse
 	name = "inter-department complaint"
@@ -590,11 +590,11 @@
 
 /obj/item/paper/memo/security/mre
 	name = "counterfeit MRE warning"
-	info = {"An "internal use only" warning  all masters at arms to watch out for counterfeit MREs being snuck inside vending machines. They reportedly contain crayons instead of actual food."}
+	info = {"An "internal use only" warning all security officers to watch out for counterfeit MREs being snuck inside vending machines. They reportedly contain crayons instead of actual food."}
 
 /obj/item/paper/memo/security/laepuse
 	name = "\improper LAEP-90 manual"
-	info = {"An "internal use only" manual normally distributed to lower-ranking masters at arms demonstrating proper usage of the LAEP-90 and LAEP-90C smartguns. A page on how to authenticate the LAEP via a card swipe has been dog-eared, with the word "MANDATORY" having been written at the top."}
+	info = {"An "internal use only" manual normally distributed to lower-ranking security officers demonstrating proper usage of the LAEP-90 and LAEP-90C smartguns. A page on how to authenticate the LAEP via a card swipe has been dog-eared, with the word "MANDATORY" having been written at the top."}
 
 /obj/item/paper/memo/security/batoncqc
 	name = "baton usage in CQC"
@@ -602,32 +602,32 @@
 
 /obj/item/paper/memo/security/goddamnhelmets
 	name = "angry PPE memo"
-	info = {"An "internal use only" note written from a Chief of Security that has grown sick of seeing masters at arms walking around on code green in full personal protective equipment. It concludes with an angry promise to rip off the next gas mask they see. It's been underlined."}
+	info = {"An "internal use only" note written from a Chief of Security that has grown sick of seeing security officers walking around on code green in full personal protective equipment. It concludes with an angry promise to rip off the next gas mask they see. It's been underlined."}
 
 /obj/item/paper/memo/security/burntout
 	name = "proper flash usage"
-	info = {"An "internal use only", hand-written note from a brig chief warning personnel not to overuse their hand flashes in order to prevent the bulb from burning out. They further note that a burnt-out flash is useless. A third party has written on this note that burnt-out flashes should instead be brought to robotics. They even underlined it and added exclamation marks for emphasis, wow."}
+	info = {"An "internal use only", hand-written note from a supervisor warning personnel not to overuse their hand flashes in order to prevent the bulb from burning out. They further note that a burnt-out flash is useless. A third party has written on this note that burnt-out flashes should instead be brought to robotics. They even underlined it and added exclamation marks for emphasis, wow."}
 
 /obj/item/paper/memo/security/lolly
 	name = "\improper STOP STEALING CANDY FROM MED"
-	info = {"Why the fuck do I have to write this to you all when the records say you're all SUPPOSEDLY legal adults? The lollipop jar in medical is for PATIENTS, not MASTERS AT ARMS. Those lollipops contain COLD MEDICINE INSTEAD OF SUGAR. STOP STEALING THEM!!! If you want candy so goddamn much GO TO A VENDING MACHINE. If I see one of you stealing candy from medical, you're being demoted to sanitation tech of maintenance for the rest of your miserable tour here. Clean up and be more professional next shift!"}
+	info = {"Why the fuck do I have to write this to you all when the records say you're all SUPPOSEDLY legal adults? The lollipop jar in medical is for PATIENTS, not SECURITY OFFICERS. Those lollipops contain COLD MEDICINE INSTEAD OF SUGAR. STOP STEALING THEM!!! If you want candy so goddamn much GO TO A VENDING MACHINE. If I see one of you stealing candy from medical, you're being demoted to sanitation tech of maintenance for the rest of your miserable tour here. Clean up and be more professional next shift!"}
 
 /obj/item/paper/memo/security/chaplain
 	name = "inter-department complaint"
-	info = {"An inter-departmental memo from the Chaplain's office detailing their objection at length to the Torch permitting capital punishment within its walls. A diplomatic and scientifically oriented ship should have "no part in warfare"."}
+	info = {"An inter-departmental memo from the Chaplain's office detailing their objection at length to the Torch permitting capital punishment within its walls. A expeditionary and scientifically oriented ship should have "no part in warfare"."}
 
 /obj/item/paper/memo/security/extremism
 	name = "anti-radicalization pamphlet"
-	info = {"An "internal use only" document detailing strategies for identifying signs and risk factors for radicalization, created in light of perceived extremism in the SCGF. It discusses low self-esteem, stress, marginalization, repeat disciplinary issues, and excessive interest in weaponry."}
+	info = {"An "internal use only" document detailing strategies for identifying signs and risk factors for radicalization, created in light of perceived extremism in PMCs. It discusses low self-esteem, stress, marginalization, repeat disciplinary issues, and excessive interest in weaponry."}
 
 /obj/item/paper/memo/security/useofforce
 	name = "use of force complaint"
-	info = {"An inter-departmental memo from the Chief Medical Officer to the Chief of Security and Brig Chief about the amount of detainees treated for injuries "far greater then would be needed" following their detainment. It has a quite graphic description of a crewmember who's legs were broken for simply walking away from a master at arms."}
+	info = {"An inter-departmental memo from the Chief Medical Officer to the Chief of Security and Supervisor about the amount of detainees treated for injuries "far greater then would be needed" following their detainment. It has a quite graphic description of a crewmember who's legs were broken for simply walking away from a security officer."}
 
 /obj/item/paper/memo/security/testing
 	name = "research testing notice"
-	info = {"An inter-departmental memo from the Chief Engineer, co-signed by the Seinor Enlisted Advisor conserning repeated instances of the research department testing explosive devices aboard the vessel. Attached is a copy of the vessel's SOP pertaining to research operations, with in big bold letters "Testing of any explosives with risk of penetrating the hull or causing mass destruction must be done at an away site." with a note that the testing aboard has repeatedly caused damage to the thruster fuel storage tank, and that engineering staff are 'prepared to file as much paperwork that is required'."}
+	info = {"An inter-departmental memo from the Chief Engineer, co-signed by the Bosun conserning repeated instances of the research department testing explosive devices aboard the vessel. Attached is a copy of the vessel's SOP pertaining to research operations, with in big bold letters "Testing of any explosives with risk of penetrating the hull or causing mass destruction must be done at an away site." with a note that the testing aboard has repeatedly caused damage to the thruster fuel storage tank, and that engineering staff are 'prepared to file as much paperwork that is required'."}
 
 /obj/item/paper/memo/security/goodcomms
 	name = "security comm report"
-	info = {"An "internal use only" report created by mid-level EXO Security Officers, complimenting Torch for their effective, direct and information focused radio-communication. The author mentions an abbreviation table from years ago that is no longer used. It ends by gently reminding members that gossiping in person is fine, but not to do it in recorded rooms like interrogation."}
+	info = {"An "internal use only" report created by mid-level NanoTrasen Security Officers, complimenting Torch for their effective, direct and information focused radio-communication. The author mentions an abbreviation table from years ago that is no longer used. It ends by gently reminding members that gossiping in person is fine, but not to do it in recorded rooms like interrogation."}
