@@ -188,7 +188,7 @@
 
 // magistrate memos
 
-/obj/item/paper/memo/magistrate/rimjokes
+/obj/item/paper/memo/magistrate/skrelljokes
 	name = "internal conversation record"
 	info = {"A "confidential" discussion between several government officials, including some vulgar puns about how they'd like to be "serviced" by a promienent female politician from a rimworld colony."}
 
@@ -249,7 +249,7 @@
 
 /obj/item/paper/memo/command/fraternizationissues
 	name = "anti-fraternization memo"
-	info = {"An "internal use only" memo sent from the Corporate Liaison to all infirmary staff informing them that, yes, inappropriate relationships are also forbidden for corpsmen and medical technicians. It highlights that further instances of fraternization can and will result in disciplinary action and reminds all staff that the provision of medical care is their first priority."}
+	info = {"An "internal use only" memo sent from the Corporate Liaison to all infirmary staff informing them that, yes, inappropriate relationships are also forbidden for paramedics and medical technicians. It highlights that further instances of fraternization can and will result in disciplinary action and reminds all staff that the provision of medical care is their first priority."}
 
 /obj/item/paper/memo/command/bunnybirdissues
 	name = "bridge officer hallucination issues"
@@ -265,7 +265,7 @@
 
 /obj/item/paper/memo/command/punishments
 	name = "disposition of offenses"
-	info = {"A "for official use only" memorandum detailing an officer's options with regards to punishing uniformed servicemembers. In ascending order of severity, the officer can: take no action (after investigation), take administrative action, impose nonjudicial punishment, and court-martial the offender."}
+	info = {"A "for official use only" memorandum detailing an officer's options with regards to punishing crewmembers. In ascending order of severity, the officer can: take no action (after investigation), take administrative action, impose nonjudicial punishment, issue judicial punishment, and place the offender on trial."}
 
 /obj/item/paper/memo/command/realitybreak
 	name = "\improper Bluespace drive apparitions"
@@ -273,7 +273,7 @@
 
 /obj/item/paper/memo/command/njprules
 	name = "non-judicial punishments"
-	info = {"A "for official use only" memorandum detailing options with regards to non-judicially punishing uniformed servicemembers. Such punishments include admonishment/reprimand, forfeiture of pay, restriction, extra duty, and reduction in rank. The punishments available and their severity depend on the rank of the accused and the imposing officer."}
+	info = {"A "for official use only" memorandum detailing options with regards to non-judicially punishing crewmembers. Such punishments include admonishment/reprimand, forfeiture of pay, restriction, extra duty, and reduction in rank. The punishments available and their severity depend on the rank of the accused and the imposing officer."}
 
 /obj/item/paper/memo/command/outpostreport
 	name = "E-14b outpost report"
@@ -281,15 +281,11 @@
 
 /obj/item/paper/memo/command/evasiveflight
 	name = "evasive flight maneuvers"
-	info = {"A hastily-penned report detailing strategies for evading ship-to-ship laser fire and missile strikes in the event of an attack on the Torch. The author highly recommends the tactical use of space dust and other debris, citing the successful evasive action taken during the attack by pirates."}
+	info = {"A hastily-penned report detailing strategies for evading ship-to-ship laser fire and missile strikes in the event of an attack on the Torch. The author highly recommends the tactical use of space dust and other debris, citing the successful evasive action taken during an attack by pirates."}
 
 /obj/item/paper/memo/command/confedsightings
-	name = "confederate naval protocols"
-	info = {"An "internal use only" memo sent from the Government Representative to the bridge crew reminding them that the SCG is, and will for the foreseeable future, be a peace with the GCC. As such, it is entirely unneeded to 'batten down the hatches' and prepare the ship for hostilities at the mere sighting of a Confederate Naval Vessel, and that such preparations implies Xenophobic tendencies and increases the probability of diplomatic incidents."}
-
-/obj/item/paper/memo/command/pioneerpranks
-	name = "pioneer prank reports"
-	info = {"An "internal use only" memo sent from Expeditionary Command reporting on an increase in "friendly pranks" between the Expeditionary Corps and Pioneerng Corps. The report details how the warming of relations between the two Corps has brought pranks usually kept within the Expeditonary Corps into the inter-Corps realm. The report advises Non-Expeditionary Corps personnel to interpret Pioneers acting oddly as nothing more than attempts at pranking a EC vessel. It lists an example of how a Pioneer crew used the derelict hull of a cargo vessel to scare the SEV Komarov into believing they were being followed by a ghost ship."}
+	name = "third party spacefarer protocols"
+	info = {"An "internal use only" memo sent from the Magistrate to the bridge crew reminding them that the Torch is, and will for the foreseeable future, be a peace in frontier space. As such, it is entirely unneeded to 'batten down the hatches' and prepare the ship for hostilities at the mere sighting of a third party Vessel, and that such preparations implies Xenophobic tendencies and increases the probability of diplomatic incidents."}
 
 /obj/item/paper/memo/command/miranda
 	name = "miranda line caution"
@@ -297,7 +293,7 @@
 
 /obj/item/paper/memo/command/testing
 	name = "research testing complaints"
-	info = {"A growing stack of interdepartmental complaints from various members of the Engineering department concerning the repeated instances of explosives testing in the Science department aboard the ship. It heavily implies that should further occurances of damage to the Vessel take place, engineering staff may "cause bureaucratic barricades". A handwritten note at the bottom of the memo from the Chief of Security advises heavy handed legal consequences for those involved with testing in the event of future explosive related incidents to prevent "understandable yet annoying actions" from the engineering department in the form of more paperwork.."}
+	info = {"A growing stack of interdepartmental complaints from various members of the Engineering department concerning the repeated instances of explosives testing in the Science department aboard the ship. It heavily implies that should further occurances of damage to the Vessel take place, engineering staff may "cause bureaucratic barricades". A handwritten note at the bottom of the memo from the Magistrate advises heavy handed legal consequences for those involved with testing in the event of future explosive related incidents to prevent "understandable yet annoying actions" from the engineering department in the form of more paperwork.."}
 
 // supply memos
 
